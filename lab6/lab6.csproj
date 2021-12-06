@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7FC424AF-4BF4-4A05-AD05-95E9603E95A2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>lab6</RootNamespace>
+    <AssemblyName>lab6</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="db_booksDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_booksDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_booksDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_booksDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_booksDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet4.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_booksDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="db_booksDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>db_booksDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAuthors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAuthors.Designer.cs">
+      <DependentUpon>FormAuthors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBooks.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBooks.Designer.cs">
+      <DependentUpon>FormBooks.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeliveries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeliveries.Designer.cs">
+      <DependentUpon>FormDeliveries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPublish.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPublish.Designer.cs">
+      <DependentUpon>FormPublish.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPurchases.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPurchases.Designer.cs">
+      <DependentUpon>FormPurchases.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAuthors.resx">
+      <DependentUpon>FormAuthors.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBooks.resx">
+      <DependentUpon>FormBooks.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeliveries.resx">
+      <DependentUpon>FormDeliveries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPublish.resx">
+      <DependentUpon>FormPublish.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPurchases.resx">
+      <DependentUpon>FormPurchases.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="db_booksDataSet.xsc">
+      <DependentUpon>db_booksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet.xss">
+      <DependentUpon>db_booksDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet1.xsc">
+      <DependentUpon>db_booksDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet1.xss">
+      <DependentUpon>db_booksDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet2.xsc">
+      <DependentUpon>db_booksDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet2.xss">
+      <DependentUpon>db_booksDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet3.xsc">
+      <DependentUpon>db_booksDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet3.xss">
+      <DependentUpon>db_booksDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet4.xsc">
+      <DependentUpon>db_booksDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet4.xss">
+      <DependentUpon>db_booksDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet5.xsc">
+      <DependentUpon>db_booksDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet5.xss">
+      <DependentUpon>db_booksDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet6.xsc">
+      <DependentUpon>db_booksDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="db_booksDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>db_booksDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="db_booksDataSet6.xss">
+      <DependentUpon>db_booksDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
